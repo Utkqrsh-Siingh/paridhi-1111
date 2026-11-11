@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#173c30">
+<title>A Wish at 11:11 — For Paridhi</title>
+<style>
+:root{--cream:#f3f0dc;--sage:#d8edbd;--green:#173c30}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:#f0f7e9;font-family:Georgia,serif;background:radial-gradient(ellipse at 50% 35%,#315d46 0%,#173c30 48%,#081c17 100%);overflow-x:hidden}
+main{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px 18px;position:relative;isolation:isolate}
+main:before{content:"";position:fixed;inset:0;z-index:-1;opacity:.3;background:radial-gradient(ellipse at top,#a4c98a33,transparent 65%)}
+.firefly{position:fixed;width:5px;height:5px;border-radius:50%;background:#e5f9a5;box-shadow:0 0 12px 4px #d9f99d;animation:fly 5s infinite ease-in-out;pointer-events:none}
+@keyframes fly{0%,100%{transform:translate(0,0);opacity:.2}50%{transform:translate(25px,-40px);opacity:1}}
+.page{display:none;width:min(100%,520px);flex-direction:column;align-items:center;animation:appear 1s ease both}
+.page.active{display:flex}
+@keyframes appear{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.glow{text-shadow:0 0 20px #c6e7a2,0 0 45px #9ecb82}
+h1{font-size:clamp(3.4rem,15vw,5.5rem);font-weight:normal;margin:0 0 8px}
+h2{font-size:clamp(2.3rem,10vw,3.5rem);font-weight:normal;margin:0 0 18px}
+.kicker{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;opacity:.75}
+.sub{font-size:1rem;line-height:1.9;max-width:390px;opacity:.82;margin:18px auto 30px}
+.name{font-size:2rem;font-style:italic;margin:8px 0}
+button{font:1rem Georgia,serif;cursor:pointer;color:var(--green);background:linear-gradient(135deg,#d8edbd,#9cc58a);border:0;border-radius:40px;padding:14px 25px;box-shadow:0 0 24px #b6d99a44;transition:transform .2s}
+button:active{transform:scale(.96)}
+.secondary{background:transparent;color:#f0f7e9;border:1px solid #c3dfb0;box-shadow:none}
+.letter{background:var(--cream);color:#344c38 !important;border-radius:5px;box-shadow:0 12px 45px #0008;width:100%;padding:25px 23px;line-height:1.8;text-align:left;font-size:1rem}
+.letter, .letter *{color:#344c38 !important}.letter .center{text-align:center}
+.letter p{margin:12px 0}
+.buttons{display:flex;flex-direction:column;gap:13px;width:min(100%,330px);margin-top:8px}
+.heart{position:fixed;bottom:-30px;color:#b5d9a4;animation:rise 7s linear forwards;pointer-events:none;z-index:3}
+@keyframes rise{0%{transform:translateY(30px) rotate(0);opacity:0}20%{opacity:.7}100%{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+.small{font-size:.75rem;opacity:.55;letter-spacing:.18em;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="firefly" style="top:13%;left:17%"></div><div class="firefly" style="top:30%;left:83%;animation-delay:1s"></div><div class="firefly" style="top:65%;left:12%;animation-delay:2s"></div><div class="firefly" style="top:76%;left:78%;animation-delay:3s"></div><div class="firefly" style="top:45%;left:53%;animation-delay:1.5s"></div>
+<main>
+<section class="page active" id="intro">
+  <div style="font-size:3rem;margin-bottom:20px" class="glow">✧</div>
+  <div class="kicker">A little wish, a little magic</div>
+  <h1 class="glow">11:11</h1>
+  <div class="kicker">11 · 11 · 2026</div>
+  <div class="name">For Paridhi 🌿</div>
+  <p class="sub">Some wishes are too beautiful to keep to ourselves. Tonight, I have one for you.</p>
+  <button onclick="showPage('letter')">Make a wish ✨</button>
+  <div class="small">MADE WITH LOVE ♡</div>
+</section>
+<section class="page" id="letter">
+  <div style="font-size:2rem;margin-bottom:18px">🌿 💌 🌿</div>
+  <div class="kicker" style="margin-bottom:20px">A letter for you</div>
+  <article class="letter">
+    <div class="center" style="font-size:1.3rem;font-style:italic">Dear Paridhiii,</div>
+    <p>Uhmm, it's been so long since I've done this, but today I felt like it, so here I am...</p>
+    <p>Paridhiii, the day I met you, I had a sense of security about you. I was constantly thinking about how our relationship would be, but maybe I was just too scared because of what happened, and even more because of who I was becoming.</p>
+    <p>But with time, I understood that not everything will be the same and not everyone is the same. So if I want to, maybe I can give love another chance. And who knows, maybe this one will be different...</p>
+    <p>I know you're new to this, and there's a great learning curve too, but honestly, I started loving what you were. I really enjoyed your company — all those times we spent talking, listening to songs, or watching a movie (iykyk).</p>
+    <p>So here I am today, fulfilling my 11:11 wish on 11:11, 11/11...</p>
+    <p class="center" style="font-size:1.25rem;font-style:italic;margin-top:24px">Will you be my girlfriend 🫶🏼<br>My forever ❤️?</p>
+    <p style="text-align:right;font-style:italic;margin-top:22px">With love, always ♡</p>
+  </article>
+  <button style="margin-top:25px" onclick="showPage('question')">There's one more thing... ♡</button>
+</section>
+<section class="page" id="question">
+  <div class="glow" style="font-size:4rem;margin-bottom:20px">♡</div>
+  <div class="kicker" style="margin-bottom:22px">My 11:11 wish</div>
+  <h2 class="glow"><i>Paridhi,</i></h2>
+  <p class="sub" style="font-size:1.25rem;opacity:1">Will you be my girlfriend and let me make a thousand more beautiful memories with you?</p>
+  <div style="font-size:2.5rem;margin:0 0 25px">🌷 💚 🌷</div>
+  <div class="buttons">
+    <button onclick="showPage('yes');makeHearts()">YES, ALWAYS! 💚</button>
+    <button class="secondary" onclick="showPage('hug')">I need a hug first 🥺</button>
+  </div>
+  <p class="small">Whatever your answer, you are special to me.</p>
+</section>
+<section class="page" id="yes">
+  <div style="font-size:4rem;margin-bottom:20px">💚</div>
+  <div class="kicker" style="margin-bottom:20px">And just like that...</div>
+  <h2 class="glow"><i>It's you & me ♡</i></h2>
+  <p class="sub" style="font-size:1.2rem;opacity:1">Here's to our little forever, Paridhi. To every 11:11, every laugh, every hug, and every beautiful chapter still waiting for us.</p>
+  <div style="font-size:3rem;margin:12px">🌙 ✨ 🌿</div>
+  <p style="font-size:1.3rem;font-style:italic">My favourite wish came true.</p>
+  <div class="small">11:11 · 11/11 · OUR LITTLE BEGINNING</div>
+</section>
+<section class="page" id="hug">
+  <div style="font-size:4rem;margin-bottom:20px">🫂</div>
+  <h2 class="glow"><i>A hug? Always.</i></h2>
+  <p class="sub" style="font-size:1.2rem;opacity:1">Consider this the biggest, warmest hug ever. No distance, no words needed. Just you and me. 💚</p>
+  <button onclick="showPage('question')">Now, one more question? ♡</button>
+</section>
+</main>
+<script>
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+function makeHearts(){for(let i=0;i<28;i++){let h=document.createElement('span');h.className='heart';h.textContent=['♡','♥','✧','❀'][i%4];h.style.left=Math.random()*96+'vw';h.style.animationDelay=(Math.random()*3)+'s';h.style.animationDuration=(5+Math.random()*5)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),11000)}}
+</script>
+</body>
+</html>
